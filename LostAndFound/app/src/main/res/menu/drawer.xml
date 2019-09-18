@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/drawer_homepage"
+            android:icon="@drawable/a"
+            android:title="HomePage" />
+
+        <item
+            android:id="@+id/drawer_settings"
+            android:icon="@drawable/a"
+            android:title="Profile Settings" />
+
+        <item
+            android:id="@+id/drawer_logout"
+            android:icon="@drawable/a"
+            android:title="Sign Out" />
+
+    </group>
+
+    <item android:title="About">
+        <menu>
+            <item
+                android:title="Establised in 2017" />
+        </menu>
+    </item>
+
+</menu>

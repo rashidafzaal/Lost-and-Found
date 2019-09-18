@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.rashid.lostandfound.Start.MainActivity">
+
+    <androidx.viewpager.widget.ViewPager xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:id="@+id/viewPagerIndicator"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="80dp"
+        android:gravity="center">
+
+        <LinearLayout
+            android:id="@+id/viewPagerCountDots"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:orientation="horizontal" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linear_btns"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:paddingBottom="38dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/main_join_btn"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Join Now"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:textColor="@android:color/white"
+            android:background="@drawable/btn_border"/>
+
+        <Button
+            android:id="@+id/main_signin_btn"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign in"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:padding="21dp"
+            android:backgroundTint="@color/myColor"/>
+    </LinearLayout>
+</RelativeLayout>

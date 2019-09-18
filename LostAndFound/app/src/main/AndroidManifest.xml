@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.rashid.lostandfound">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Start.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LoginRegister.Login" />
+        <activity android:name=".LoginRegister.Register" />
+        <activity
+            android:name=".Home"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".PostThings.LostItem"
+            android:label="Post Your Lost Item"
+            android:parentActivityName=".Home"
+            android:theme="@style/AppTheme2">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.rashid.lostandfound.Home" />
+        </activity>
+        <activity
+            android:name=".PostThings.FoundItem"
+            android:label="Post Item you Found"
+            android:parentActivityName=".Home"
+            android:theme="@style/AppTheme2">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.rashid.lostandfound.Home" />
+        </activity>
+        <activity
+            android:name=".ForgotPassword"
+            android:label="Reset Your Password"
+            android:parentActivityName=".Home"
+            android:theme="@style/AppTheme2">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.rashid.lostandfound.LoginRegister.Login" />
+        </activity>
+        <activity
+            android:name=".Settings.ProfileSettings"
+            android:label="Profile Settings"
+            android:parentActivityName=".Home"
+            android:theme="@style/AppTheme2">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.rashid.lostandfound.Home" />
+        </activity>
+        <activity
+            android:name=".Settings.EditSettings"
+            android:label="Edit Settings"
+            android:parentActivityName=".Home"
+            android:theme="@style/AppTheme2">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.rashid.lostandfound.Settings.ProfileSettings" />
+        </activity>
+
+        <activity
+            android:name=".Information"
+            android:label="Details"
+            android:parentActivityName=".Home"
+            android:theme="@style/AppTheme2">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.rashid.lostandfound.Home" />
+        </activity>
+    </application>
+
+</manifest>

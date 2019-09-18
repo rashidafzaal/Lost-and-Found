@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context="com.example.rashid.lostandfound.Fragment2">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <Button
+        android:id="@+id/found_btn"
+        android:onClick="OnPress_FoundBtn"
+
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:layout_gravity="bottom"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:text="Found Any item?"
+        android:layout_alignParentBottom="true"/>
+
+    <ListView
+        android:id="@+id/list2"
+        android:layout_above="@+id/found_btn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+</RelativeLayout>
